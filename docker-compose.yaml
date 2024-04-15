@@ -3,7 +3,12 @@ services:
   web:
     image: nginx:latest
     ports:
-      - "80:80"
+      - "8081:80"
+    container_name: docker-php_app_1
   # php
+  app:
+    build:
+      dockerfile: ./php/Dockerfile
+    container_name: docker-php_web_1
   # mysql
   # redis
