@@ -1,0 +1,9 @@
+services:
+  # nginx
+  web:
+    image: nginx:latest
+    ports:
+      - "80:80"
+  # php
+  # mysql
+  # redis
